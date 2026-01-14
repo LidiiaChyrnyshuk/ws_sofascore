@@ -1,0 +1,48 @@
+/* --------fonts----------- */
+@font-face {
+	font-family: "Stolzl";
+	src: url("../fonts/stolzl_regular.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	src: url("../fonts/stolzl_book.otf") format("opentype");
+	font-weight: 400;
+	font-style: "book";
+}
+
+@font-face {
+	font-family: "Stolzl";
+	src: url("../fonts/stolzl_medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	src: url("../fonts/stolzl_bold.otf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Stolzl";
+	src: url("../fonts/stolzl_light.otf") format("opentype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("../fonts/SpaceGrotesk-Bold.ttf") format("opentype");
+	font-weight: 700;
+	font-style: bold;
+}
+@font-face {
+	font-family: "KodeMono";
+	src: url("../fonts/KodeMono-VariableFont_wght.ttf") format("opentype");
+	font-weight: 700;
+	font-style: normal;
+}

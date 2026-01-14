@@ -1,0 +1,16 @@
+.header-mob {
+
+}
+
+@media screen and (min-width:992px) {
+  .header-mob {
+    display: none;
+  }
+}
+@media screen and (max-width:991px) {
+  .header-desk {
+    display: none;
+  }
+}
+
+

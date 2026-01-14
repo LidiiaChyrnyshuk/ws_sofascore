@@ -1,0 +1,12 @@
+:root {
+	--color-timer-bg: #ffffff29;
+	--color-timer-discription-bg: linear-gradient(
+		360deg,
+		rgba(10, 21, 41, 0.8) 0%,
+		rgba(35, 73, 143, 0.8) 100%
+	);
+	--color-modal-bg: #FFFFFF;
+	--color-text: #ffffff;
+	--color-bg-btn: linear-gradient(240.34deg, #6f7ff8 11.23%, #374df5 92.53%);
+	--color-accent-text: #ffce79;
+}

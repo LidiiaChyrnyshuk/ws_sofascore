@@ -1,0 +1,33 @@
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	font-size: 16px;
+}
+
+body {
+	font-family: "Stolzl", sans-serif;
+	font-style: normal;
+	color: var(--color-text);
+	background: var(--color-bg);
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 100dvh;
+	background-image: url(../images/body/black_bg.webp),
+		url(../images/body/snow_bg.webp),
+		url(../images/body/hauptbg.webp);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: contain, cover, cover;
+	background-position: top center,top center,top center;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	min-height: 100dvh;
+	overflow: hidden;
+	z-index: 5;
+	margin: 0 auto;
+}

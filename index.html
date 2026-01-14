@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link type="image/x-icon" rel="shortcut icon" href="./logo.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WEISS</title>
+		<script>
+			window.__REDIRECT_LINK = "%%redirect_to%%";
+		</script>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+		<script type="module" src="./js/global-params-utils.js"></script>
+		<script type="module" src="./js/modal.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section class="hero">
+				<div class="header-mob">
+					<img class="header-mob-logo-ws" src="./images/header/WS_logo.svg" alt="logo Weiss" />
+					<img class="header-mob-logo-sofascore" src="./images/header/sofascare_logo.svg" alt="logo Sofascore" />
+				</div>
+				<div class="header-desk">
+					<img class="header-desk-logo-ws" src="./images/header/WS_logo.svg" alt="logo Weiss" />
+					<img class="header-desk-creis" src="./images/header/creis.svg" alt="creis" />
+					<img class="header-desk-logo-sofascore" src="./images/header/sofascare_logo.svg" alt="logo Sofascore" />
+				</div>
+				<div class="title-mob">
+					<span>choose your</span>
+					<span>favorite event</span>
+				</div>
+				<div class="title-desk">
+					<span>choose</span>
+					<span>your favorite event</span>
+				</div>
+				<div class="hero-timer">
+					<div class="timer-wrap">
+						<div class="timer" id="countdown">
+							<div class="time-part" id="minutes">00</div>
+							<div class="colon">
+								<img src="./images/timer/colon.png" alt="colon" />
+							</div>
+							<div class="time-part" id="seconds">00</div>
+							<div class="colon">
+								<img src="./images/timer/colon.png" alt="colon" />
+							</div>
+							<div class="time-part" id="hundredths">00</div>
+						</div>
+					</div>
+					<div class="timer-content">
+						<div class="timer-content-title">10$ freebet</div>
+						<div class="timer-content-text">
+							for
+							<span class="timer-content-text-accent">Sofascore</span> community
+						</div>
+						<button class="button button-prime" type="button" data-modal-open>
+							BET NOW
+						</button>
+					</div>
+				</div>
+			</section>
+			<!--MODAL WINDOW-->
+			<div class="backdrop is-hidden" data-modal>
+				<form class="modal" id="registrationForm">
+					<div class="modal-header">
+						<div class="header-modal">
+							<img
+								class="modal-logo"
+								src="./images/header/WS_logo.svg"
+								alt="logo"
+							/>
+							<button class="modal-close" type="button" data-modal-close>
+								<img
+									class="icon-close"
+									src="./images/form/close.svg"
+									alt="close"
+									width="14"
+									height="14"
+								/>
+							</button>
+						</div>
+					</div>
+					<div class="modal-content">
+						<div class="email-wrap">
+							<label class="modal-label">
+								<span>Email*</span>
+								<input
+									class="modal-input email"
+									type="email"
+									name="email"
+									placeholder="weissadmin@gmail.com"
+									value=""
+									required
+								/>
+								<img
+									class="input-icon modal-icon"
+									src="./images/form/e-mail.svg"
+									alt="Letter icon"
+									width="24"
+									height="24"
+								/>
+							</label>
+							<p class="error-text">Incorrect email format</p>
+						</div>
+						<div class="password-wrap">
+							<label class="modal-label password-container">
+								<span>Password*</span>
+								<input
+									class="modal-input password"
+									type="password"
+									name="password"
+									placeholder="Enter your password"
+									value=""
+									required
+								/>
+								<img
+									class="input-icon modal-icon"
+									src="./images/form/password.svg"
+									alt="Lock icon"
+									width="24"
+									height="24"
+								/>
+								<button
+									type="button"
+									class="toggle-password"
+									aria-label="Toggle password"
+								>
+									<img
+										class="toggle-icon"
+										src="./images/form/eye-closed.svg"
+										alt="Toggle visibility"
+										width="24"
+										height="24"
+									/>
+								</button>
+							</label>
+							<!-- Валідаційні підказки -->
+							<div class="password-hints" id="passwordHint">
+								<div class="hint-list">
+									<div class="hint-item" data-check="length">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid"
+											>Contain at least 6 characters</span
+										>
+									</div>
+									<div class="hint-item" data-check="uppercase">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid"
+											>Include at least 1 uppercase letter</span
+										>
+									</div>
+									<div class="hint-item" data-check="digit">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid">Include at least 1 number</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<label class="modal-check modal-label">
+							<input
+								class="modal-checkbox"
+								type="checkbox"
+								name="terms"
+								required
+							/>
+							<span class="modal-checkbox-text">
+								<span
+									>By ticking this box to register for this website, the user
+									declares to be over 18 years old and to have read, understood
+									and accepted
+								</span>
+								<a href="https://weiss.bet/terms-and-conditions"
+									>the Terms and Conditions.</a
+								>.
+							</span>
+						</label>
+					</div>
+					<div id="captcha-container"></div>
+					<div class="modal-btn">
+						<button id="submitBtn" class="button modal-button" type="submit">
+							Create an account
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="module" src="./js/timer.js"></script>
+	</body>
+</html>

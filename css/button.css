@@ -1,0 +1,31 @@
+.button {
+	width: 342px;
+	height: 64px;
+	border: 2px solid rgba(255, 255, 255, 0.16);
+	border-radius: 20px;
+	padding-top: 8px;
+	padding-right: 48px;
+	padding-bottom: 8px;
+	padding-left: 48px;
+	background: var(--color-bg-btn);
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--color-text);
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.button-prime {
+	margin-bottom: 150px;
+}
+
+@media screen and (min-width: 1024px) {
+	.button-prime {
+		font-size: 36px;
+		width: 542px;
+		height: 78px;
+		margin-bottom: 139px;
+	}
+}
+
