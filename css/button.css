@@ -1,31 +1,48 @@
 .button {
-	width: 342px;
-	height: 64px;
-	border: 2px solid rgba(255, 255, 255, 0.16);
-	border-radius: 20px;
+	width: 100%;
+	max-width: 742px;
+	height: 56px;
+	border: 2px solid rgba(255, 255, 255, 0.24);
+	border-radius: 16px;
 	padding-top: 8px;
 	padding-right: 48px;
 	padding-bottom: 8px;
 	padding-left: 48px;
 	background: var(--color-bg-btn);
+	font-family: "Stolzl", sans-serif;
 	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 24px;
+	line-height: 32px;
 	color: var(--color-text);
 	cursor: pointer;
 	text-transform: uppercase;
+	margin-top: 16px;
+	animation: pulseScale 2.5s ease-out infinite;
+	will-change: transform, box-shadow;
 }
 
-.button-prime {
-	margin-bottom: 150px;
+@keyframes pulseScale {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(128, 142, 255, 0.16);
+	}
+	50% {
+		transform: scale(1.03);
+	}
+	70% {
+		box-shadow: 0 0 0 12px rgba(128, 142, 255, 0);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(128, 142, 255, 0);
+	}
 }
 
-@media screen and (min-width: 1024px) {
-	.button-prime {
-		font-size: 36px;
-		width: 542px;
-		height: 78px;
-		margin-bottom: 139px;
+@media screen and (min-width:992px) {
+	.button {
+		height: 87px;
+		font-size: 42px;
+		margin-top: 24px;
 	}
 }
 

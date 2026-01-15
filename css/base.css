@@ -19,7 +19,7 @@ body {
 		url(../images/body/snow_bg.webp),
 		url(../images/body/hauptbg.webp);
 	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: contain, cover, cover;
+	background-size: cover, cover, cover;
 	background-position: top center,top center,top center;
 }
 

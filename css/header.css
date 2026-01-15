@@ -1,16 +1,60 @@
 .header-mob {
-
+	height: 194px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 45px;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../images/header/Logo_Background_1.webp),
+		url(../images/header/Logo_Background_2.webp);
+	background-repeat: no-repeat, no-repeat;
+	background-size: 90% 98%, 90% 100%;
+	background-position: left top 10px, right bottom -55px;
 }
+	.header-desk {
+		display: none;
+	}
+	.logo-mob {
+		width: 171px;
+	}
 
-@media screen and (min-width:992px) {
-  .header-mob {
-    display: none;
-  }
-}
-@media screen and (max-width:991px) {
-  .header-desk {
-    display: none;
-  }
+@media screen and (min-width: 992px) {
+	.header-mob {
+		display: none;
+	}
+	.header-desk {
+    height: 212px;
+		/* padding-top: 20px; */
+		display: flex;
+		flex-direction: row;
+		gap: 109px;
+		align-items: center;
+		justify-content: center;
+    background-image: url(../images/header/Logo_Background_1_desk.webp),url(../images/header/Logo_Background_2_desk.webp);
+	opacity: 1;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 47% 220% ,47% 220%;
+	background-position: left bottom -250px, right bottom -250px;
+	/* overflow: hidden; */
+	}
+
+	.header-desk-logo-ws {
+    position: relative;
+    z-index: 5;
+		width: 305px;
+	}
+	.header-desk-creis {
+    position: relative;
+    z-index: 5;
+		width: 37px;
+		height: 36px;
+	}
+	.header-desk-logo-sofascore {
+		width: 301px;
+    position: relative;
+    z-index: 5;
+	}
 }
 
 
