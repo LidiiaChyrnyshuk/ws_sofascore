@@ -2,7 +2,7 @@
 	width: 100%;
 	max-width: 742px;
 	height: 56px;
-	border: 2px solid rgba(255, 255, 255, 0.24);
+	border: 2px solid rgba(255, 255, 255, 0.6);
 	border-radius: 16px;
 	padding-top: 8px;
 	padding-right: 48px;
@@ -19,6 +19,8 @@
 	margin-top: 16px;
 	animation: pulseScale 2.5s ease-out infinite;
 	will-change: transform, box-shadow;
+	position: relative;
+	z-index: 10;
 }
 
 @keyframes pulseScale {

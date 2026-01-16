@@ -1,3 +1,91 @@
+@media screen and (max-width: 991px) {
+	.hero {
+		min-height: 100vh;
+		background-image: url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom center;
+	}
+	.hero::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 8;
+		background-image: url(../images/body/Hokkey_Player_mob.webp);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom center;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.hero {
+		min-height: 100vh;
+		background-image: url(../images/body/snow_left.webp),
+			url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 600px 600px, 900px 600px;
+		background-position: left bottom, right -400px bottom;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/body/Hokkey_Player_desk.webp),
+			url(../images/body/Basketball_Player.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: contain, contain;
+		background-position: right -300px bottom -220px, left -350px bottom -150px;
+	}
+}
+@media screen and (min-width: 1512px) {
+	.hero {
+		min-height: 100vh;
+		background-image: url(../images/body/snow_left.webp),
+			url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 600px 600px, 900px 600px;
+		background-position: left bottom, right -400px bottom;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/body/Hokkey_Player_desk.webp),
+			url(../images/body/Basketball_Player.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 900px 1200px, 1200px 1300px;
+		background-position: right -250px bottom -300px, left -400px bottom -200px;
+	}
+}
+@media screen and (min-width: 2400px) {
+	.hero {
+		min-height: 100vh;
+		background-image: url(../images/body/snow_flare.webp),
+			url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 900px 600px, 900px 600px;
+		background-position: left bottom, right bottom;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/body/Hokkey_Player_desk.webp),
+			url(../images/body/Basketball_Player.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 1200px 1600px, 1700px 1800px;
+		background-position: right -200px bottom -500px, left -400px bottom -400px;
+	}
+}
+
 .title-mob {
 	width: 100%;
 	padding-left: 16px;
@@ -46,8 +134,10 @@
 }
 /* ----timer---- */
 .hero-content {
-	width: 100%;
-	max-width: 798px;
+	position: relative;
+	z-index: 4;
+	width: 390px;
+	/* max-width: 390px; */
 	padding-left: 16px;
 	padding-right: 16px;
 	display: flex;
@@ -56,6 +146,7 @@
 	justify-content: center;
 	margin: 0 auto 300px auto;
 }
+
 .hero-timer {
 	width: 100%;
 	border-radius: 28px;
@@ -66,6 +157,36 @@
 		rgba(35, 73, 143, 0.8) 100%
 	);
 }
+@media screen and (max-width: 991px) {
+	.hero-content::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/timer/Puck2.webp),
+			url(../images/timer/Puck1.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100px 90px, 90px 47px;
+		background-position: left -22px top 40px, right -15px top 55px;
+	}
+
+	.hero-timer::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/timer/Broken_glass_rigth.webp),
+			url(../images/timer/Broken_glass_left.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100px 200px, 80px 150px;
+		background-position: left 15px top, right 15px top;
+		overflow: hidden;
+	}
+}
+
+
 .timer-wrap {
 	width: 100%;
 	border-radius: 28px;
@@ -95,10 +216,14 @@
 }
 
 .timer-content {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+	width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .timer-content-title {
 	font-family: "Stolzl", sans-serif;
@@ -112,65 +237,93 @@
 	margin-top: 16px;
 }
 .timer-content-text {
-  font-family: "Stolzl", sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 15px;
-line-height: 100%;
-text-align: center;
-text-transform: uppercase;
-color: var(--color-accent-text);
-margin-top: 10px;
+	font-family: "Stolzl", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-accent-text);
+	margin-top: 10px;
 }
 .timer-content-text-accent {
-  font-family: "Stolzl", sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 15px;
-line-height: 100%;
-text-align: center;
-text-transform: uppercase;
-color: var(--color-text);
+	font-family: "Stolzl", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 15px;
+	line-height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--color-text);
 }
 
-@media screen and (min-width:992px) {
-  .hero-content {
-	margin: 0 auto 192px auto;
-}
-.hero-timer {
-	border-radius: 42px;
-	border: 2px solid rgba(255, 255, 255, 0.24);
-}
-.timer {
-	gap: 16px;
-	height: 168px;
-	border-top-left-radius: 42px;
-	border-top-right-radius: 42px;
-}
-.time-part {
-	font-size: 120px;
-	line-height: 120px;
-	
-}
-.colon {
-	width: 12px;
-	height: 60px;
-}
+@media screen and (min-width: 992px) {
+	.hero-content {
+		width: 990px;
+    padding-left: 94px;
+    padding-right: 94px;
+		margin: 0 auto 192px auto;
+	}
+  	.hero-content::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 12;
+		background-image: url(../images/timer/Puck1.webp),
+			url(../images/timer/Puck2.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 300px 200px, 280px 230px;
+		background-position: left -8% top 70%, right -5% top 215px;
+	}
 
-.timer-content {
-  width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 24px;
-}
-.timer-content-title {
-	font-size: 80px;
-	margin-top: 24px;
-}
-.timer-content-text {
-font-size: 32px;
-}
-.timer-content-text-accent {
-font-size: 32px;
-}
+	.hero-timer::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/timer/Broken_glass_left_desk.webp),
+			url(../images/timer/Broken_glass_rigth_desk.webp);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 260px 280px,400px 300px;
+		background-position: left 92px top 60%, right 90px top 77%;
+		overflow: hidden;
+	}
+	.hero-timer {
+		border-radius: 42px;
+		border: 2px solid rgba(255, 255, 255, 0.24);
+	}
+	.timer {
+		gap: 16px;
+		height: 168px;
+		border-top-left-radius: 42px;
+		border-top-right-radius: 42px;
+	}
+	.time-part {
+		font-size: 120px;
+		line-height: 120px;
+	}
+	.colon {
+		width: 12px;
+		height: 60px;
+	}
+
+	.timer-content {
+		width: 100%;
+		padding-left: 24px;
+		padding-right: 24px;
+		padding-bottom: 24px;
+	}
+	.timer-content-title {
+		font-size: 80px;
+		margin-top: 24px;
+	}
+	.timer-content-text {
+		font-size: 32px;
+	}
+	.timer-content-text-accent {
+		font-size: 32px;
+	}
 }
