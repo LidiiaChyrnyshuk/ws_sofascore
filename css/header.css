@@ -1,16 +1,16 @@
 .header-mob {
 	height: 194px;
-	padding-top: 30px;
+	/* padding-top: 20px; */
 	display: flex;
 	flex-direction: column;
 	gap: 45px;
 	align-items: center;
 	justify-content: center;
 	background-image: url(../images/header/Logo_Background_1.webp),
-		url(../images/header/Logo_Background_2.webp);
+		url(../images/header/logo_Background_2.png);
 	background-repeat: no-repeat, no-repeat;
-	background-size: 90% 98%, 90% 100%;
-	background-position: left top 10px, right bottom -55px;
+	background-size: 90% 98%, 90% 120%;
+	background-position: left top -5px , right bottom -60px;
 }
 	.header-desk {
 		display: none;
