@@ -10,7 +10,7 @@
 		url(../images/header/logo_Background_2.png);
 	background-repeat: no-repeat, no-repeat;
 	background-size: 90% 98%, 90% 120%;
-	background-position: left top -5px , right bottom -60px;
+	background-position: left top -10px , right bottom -60px;
 }
 	.header-desk {
 		display: none;
@@ -35,7 +35,7 @@
 	opacity: 1;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 47% 220% ,47% 220%;
-	background-position: left bottom -250px, right bottom -250px;
+	background-position: left bottom -250px, right bottom -255px;
 	/* overflow: hidden; */
 	}
 
@@ -57,4 +57,21 @@
 	}
 }
 
+@media screen and (min-width: 1892px) {
+		.header-desk {
+    height: 222px;
+		/* padding-top: 20px; */
+		display: flex;
+		flex-direction: row;
+		gap: 109px;
+		align-items: center;
+		justify-content: center;
+    background-image: url(../images/header/Logo_Background_1_desk.webp),url(../images/header/Logo_Background_2_desk.webp);
+	opacity: 1;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 47% 250% ,47% 250%;
+	background-position: left bottom -315px, right bottom -320px;
+	/* overflow: hidden; */
+	}
+}
 
