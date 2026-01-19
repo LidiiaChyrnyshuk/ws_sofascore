@@ -15,7 +15,7 @@
 	}
   @supports (-webkit-touch-callout: none) {
 	.hero::after {
-		background-size: cover;
+		background-size: 120%;
 	}
 }
 	.hero::before {
