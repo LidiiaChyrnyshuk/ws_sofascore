@@ -1,8 +1,21 @@
 @media screen and (max-width: 468px) {
 	.hero {
 		min-height: 100dvh;
+		position: relative;
 	}
-	.hero::after {
+	.hero-content-img-wrap {
+		width: 100%;
+	}
+	.hero-content-img {
+		display: block;
+		width: 108%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: -8%;
+		z-index: 20;
+	}
+	/* 	.hero::after {
 		content: "";
 		position: absolute;
 		inset: 0;
@@ -12,7 +25,7 @@
 		background-repeat: no-repeat;
 		background-size: 120.38vw 106.25vw;
 		background-position: bottom center;
-	}
+	} */
 	.hero::before {
 		content: "";
 		position: absolute;
@@ -25,11 +38,24 @@
 		background-position: bottom center;
 	}
 }
-@media screen and (min-width: 469px) and (max-width:991px) {
+@media screen and (min-width: 469px) and (max-width: 648px) {
 	.hero {
 		min-height: 100dvh;
+		position: relative;
 	}
-	.hero::after {
+	.hero-content-img-wrap {
+		width: 100%;
+	}
+	.hero-content-img {
+		display: block;
+		width: 80%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 8%;
+		z-index: 20;
+	}
+	/* 	.hero::after {
 		content: "";
 		position: absolute;
 		inset: 0;
@@ -39,6 +65,94 @@
 		background-repeat: no-repeat;
 		background-size: 550px 500px;
 		background-position: bottom center;
+	} */
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 1;
+		background-image: url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+		background-position: bottom center;
+	}
+}
+
+@media screen and (min-width: 649px) and (max-width: 748px) {
+	.hero {
+		min-height: 100dvh;
+		position: relative;
+	}
+	.hero-content-img-wrap {
+		width: 100%;
+	}
+	.hero-content-img {
+		display: block;
+		width: 70%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 14%;
+		z-index: 20;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 1;
+		background-image: url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+		background-position: bottom center;
+	}
+}
+@media screen and (min-width: 749px) and (max-width: 848px) {
+	.hero {
+		min-height: 100dvh;
+		position: relative;
+	}
+	.hero-content-img-wrap {
+		width: 100%;
+	}
+	.hero-content-img {
+		display: block;
+		width: 60%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 20%;
+		z-index: 20;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 1;
+		background-image: url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
+		background-position: bottom center;
+	}
+}
+@media screen and (min-width: 849px) and (max-width: 991px) {
+	.hero {
+		min-height: 100dvh;
+		position: relative;
+	}
+	.hero-content-img-wrap {
+		width: 100%;
+	}
+	.hero-content-img {
+		display: block;
+		width: 50%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		left: 24%;
+		z-index: 20;
 	}
 	.hero::before {
 		content: "";
@@ -61,6 +175,9 @@
 		background-repeat: no-repeat, no-repeat;
 		background-size: 600px 600px, 900px 600px;
 		background-position: left bottom, right -400px bottom;
+	}
+	.hero-content-img {
+		display: none;
 	}
 	.hero::before {
 		content: "";
@@ -98,7 +215,7 @@
 	}
 }
 @media screen and (min-width: 1892px) {
-.hero {
+	.hero {
 		min-height: 100vh;
 		background-image: url(../images/body/snow_flare.webp),
 			url(../images/body/snow_flare.webp);
@@ -316,7 +433,7 @@
 @media screen and (min-width: 992px) {
 	.hero-content {
 		width: 990px;
-    max-width: 990px;
+		max-width: 990px;
 		padding-left: 94px;
 		padding-right: 94px;
 		margin: 0 auto 192px auto;
