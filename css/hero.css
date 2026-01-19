@@ -1,6 +1,6 @@
 @media screen and (max-width: 991px) {
 	.hero {
-		min-height: 100vh;
+		min-height: 100dvh;
 	}
 	.hero::after {
 		content: "";
@@ -13,6 +13,11 @@
 		background-size: contain;
 		background-position: bottom center;
 	}
+  @supports (-webkit-touch-callout: none) {
+	.hero::after {
+		background-size: cover;
+	}
+}
 	.hero::before {
 		content: "";
 		position: absolute;
@@ -165,8 +170,8 @@
 .hero-content {
 	position: relative;
 	z-index: 4;
-	width: 390px;
-	/* max-width: 390px; */
+	width: 100%;
+	max-width: 390px;
 	padding-left: 16px;
 	padding-right: 16px;
 	display: flex;
@@ -289,6 +294,7 @@
 @media screen and (min-width: 992px) {
 	.hero-content {
 		width: 990px;
+    max-width: 990px;
 		padding-left: 94px;
 		padding-right: 94px;
 		margin: 0 auto 192px auto;
