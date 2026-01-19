@@ -1,4 +1,4 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 468px) {
 	.hero {
 		min-height: 100dvh;
 	}
@@ -10,14 +10,9 @@
 		z-index: 8;
 		background-image: url(../images/body/Hokkey_Player_mob.webp);
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: 115.38vw 110.25vw;
 		background-position: bottom center;
 	}
-  @supports (-webkit-touch-callout: none) {
-	.hero::after {
-		background-size: 130%;
-	}
-}
 	.hero::before {
 		content: "";
 		position: absolute;
@@ -27,6 +22,33 @@
 		background-image: url(../images/body/snow_flare.webp);
 		background-repeat: no-repeat;
 		background-size: contain;
+		background-position: bottom center;
+	}
+}
+@media screen and (min-width: 469px) and (max-width:991px) {
+	.hero {
+		min-height: 100dvh;
+	}
+	.hero::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 8;
+		background-image: url(../images/body/Hokkey_Player_mob.webp);
+		background-repeat: no-repeat;
+		background-size: 550px 500px;
+		background-position: bottom center;
+	}
+	.hero::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 1;
+		background-image: url(../images/body/snow_flare.webp);
+		background-repeat: no-repeat;
+		background-size: 500px 500px;
 		background-position: bottom center;
 	}
 }
