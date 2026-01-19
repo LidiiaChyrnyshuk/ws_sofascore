@@ -10,7 +10,7 @@
 		url(../images/header/logo_Background_2.png);
 	background-repeat: no-repeat, no-repeat;
 	background-size: 90% 98%, 90% 120%;
-	background-position: left top -10px , right bottom -60px;
+	background-position: left top -2px , right bottom -60px;
 }
 	.header-desk {
 		display: none;

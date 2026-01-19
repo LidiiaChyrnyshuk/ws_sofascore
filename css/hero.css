@@ -66,7 +66,7 @@
 		background-image: url(../images/body/Hokkey_Player_desk.webp),
 			url(../images/body/Basketball_Player.webp);
 		background-repeat: no-repeat, no-repeat;
-		background-size: 900px 1200px, 1200px 1300px;
+		background-size: 950px 1200px, 1200px 1300px;
 		background-position: right -250px bottom -300px, left -370px bottom -200px;
 	}
 }
@@ -77,7 +77,7 @@
 			url(../images/body/snow_flare.webp);
 		background-repeat: no-repeat, no-repeat;
 		background-size: 900px 600px, 900px 600px;
-		background-position: left 100px bottom, right -50px bottom;
+		background-position: left 50px bottom, right -50px bottom;
 	}
 	.hero::before {
 		content: "";
