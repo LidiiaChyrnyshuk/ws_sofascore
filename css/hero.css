@@ -72,7 +72,7 @@
 			url(../images/body/Basketball_Player.webp);
 		background-repeat: no-repeat, no-repeat;
 		background-size: 950px 1200px, 1200px 1300px;
-		background-position: right -250px bottom -300px, left -370px bottom -200px;
+		background-position: right -320px bottom -300px, left -370px bottom -200px;
 	}
 }
 @media screen and (min-width: 1892px) {
